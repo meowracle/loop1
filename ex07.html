@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex07</title>
+</head>
+<body>
+<script>
+    var num=[];
+    for (i=0; i<100; i++){
+        num.push(i+1);
+        if (num[i]%3==0) {
+            if (num[i]%5==0) {
+                num[i]="FizzBuzz";
+            } else {
+                num[i]="Fizz";
+            }
+        } else if (num[i]%5==0) {
+                num[i]="Buzz";
+        }
+    }
+    document.write(num)
+</script>
+</body>
+</html>
